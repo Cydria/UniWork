@@ -1,0 +1,76 @@
+<html>
+<head>
+   <title>Tab Example</title>
+   <script type="text/javascript" src="JOng180.js"></script>
+   <link rel="stylesheet" type="text/css" href="JOng180.css"/>
+<script>
+   </script>
+</head>
+<body>
+   <header>
+   	  <img src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" alt="Smiley face" height="100" width="100" class = "logo">
+		<!-- Table structure taken from examples in CompSci335 -->
+      <table style="width: 100%;">
+         <tr>
+            <td id="TabA" class="center" onclick="showTabA();">
+               Home
+            </td>
+            <td id="TabB" class="center" onclick="showTabB();">
+               Blurays
+            </td>
+            <td id="TabC" class="center" onclick="showTabC();">
+               Books
+            </td>
+            <td id="TabD" class="center" onclick="showTabD();">
+               Register
+            </td>
+            <td id="TabE" class="center" onclick="showTabE();">
+               Guest Book
+            </td>
+         </tr>
+      </table>
+      <hr />
+   </header>
+   <div id="SectionA">
+      <section>
+         <p class = "home">
+			Welcome to La Boutique Cassée!
+         </p>
+      </section>
+   </div>
+   <div id="SectionB">
+      <section>
+         <p>
+			<table id="blurayTable"></table>
+         </p>
+      </section>
+   </div>
+   <div id="SectionC">
+      <section>
+         <p>
+            <table id="booksTable"></table>
+         </p>
+      </section>
+   </div>
+   <div id="SectionD">
+      <section>
+	  <p class = "register">Create an account with us!<br></p>
+	  <!-- Input tags taken from https://www.w3schools.com/tags/tag_input.asp -->
+		<p class = "register">Username: <input type="text" id="userName"><br></p>
+		<p class = "register">Password: <input type="text" id="userPassword"><br></p>
+		<p class = "register">Address: <input type="text" id="userAddress"><br></p>
+		<p class = "register"><input onclick = "registerUser();" type="submit" value="Register"></p>
+      </section>
+   </div>
+   <div id="SectionE">
+		<section>
+        <p class = "guestBook">First Name: <input type="text" id="fname"><br></p>
+		<!-- Text area taken from https://www.w3schools.com/tags/tag_textarea.asp -->
+		<p class = "guestBook"><textarea id = "comment" rows="4" cols="50" placeholder = "Enter your comment here..."></textarea></p>
+		<p class = "guestBook"><input onclick = "postComment()" type="submit" value="Submit"></p>
+		<!-- iFrame code taken from https://www.w3schools.com/tags/tag_iframe.asp -->
+		<p class = "guestBook"><iframe id = "display" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/htmlcomments"></iframe></p>
+		</section>
+   </div>
+</body>
+</html>

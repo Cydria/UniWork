@@ -1,0 +1,33 @@
+/* Image and css layout taken from https://24ways.org/2012/how-to-make-your-site-look-half-decent/ */
+
+body { 
+    background: url(memphis-colorful.png) repeat 0 0;
+}
+
+#blurayTable{
+    margin-left:auto; 
+    margin-right:auto;
+	}
+	
+#booksTable{
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+p.register{
+	padding-left: 33%;
+}
+
+p.guestBook{
+	padding-left: 33%;
+}
+
+p.home{
+	text-align: center;
+}
+
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

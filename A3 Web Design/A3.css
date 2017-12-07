@@ -1,0 +1,202 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	padding-top: 0px;
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 250%;
+	text-align: center;
+
+}
+
+#sidebarh1 {
+	color: #AB7A3B;
+	text-align: center;
+	font-size: 200%;
+}
+
+#sidebarh2{
+	color: #AB7A3B;
+	text-align: center;
+}
+
+hr { 
+    display: block;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#sidebaruser{
+	color: #AB7A3B;
+	text-align: center;
+}
+
+#sidebarupcoming{
+	color: #AB7A3B;
+	text-align: center;
+}
+
+#CourseMaterialHeader {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 150%;
+}
+
+
+.top {
+    position:absolute;
+    left:0; right:0;
+    height: 92px;
+}
+
+.footer {
+	color: #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 20px;
+	text-align: center;
+
+}
+
+
+.nav{
+	background-color:  #ffffff;
+	color: #000000;
+	list-style: none;
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+.nav > li{
+	display: inline-block;
+	padding-right: 25px;
+}
+
+.nav > li > a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 15px;
+}
+
+.nav > li > a:hover{
+	color: #ffbb99;
+	text-decoration: underline;
+}
+
+#ContentImage {
+	text-align: center;
+}
+
+
+#MainImage {
+	text-align: center;
+}
+
+
+.container{
+	margin-top: 10px;
+	margin-left: 685px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	text-align: left;
+	padding: 10px 20px 20px 30px;
+	border-radius: 10px;
+	width: 460px;
+}
+
+@media only screen and (max-width:500px){
+	.container{
+		background-color: black;
+	}
+}
+
+
+
+textarea{
+	resize: none;
+}
+
+.wrapper {
+    display:table;
+    width: 100%;
+}
+.left {
+    display:table-cell;
+    width:50%;
+}
+.right {
+    display:table-cell;
+    width:50%;
+}
+.center {
+    display:table-cell;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px 0px 20px 50px;
+    text-align: left;
+
+}
+.center span {
+    display:inline-block;
+    width:480px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #FFDBAC; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
